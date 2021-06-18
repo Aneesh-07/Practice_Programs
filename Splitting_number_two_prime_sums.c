@@ -16,9 +16,10 @@ int main()
 	int n;
 	printf("Enter no.\n");
 	scanf("%d",&n);
-	int a=0,b=n;
+	int a=2,b=n-2;
 	for(int i=0;i<n/2;i++)
 	{
+
 		if(primes(a)&&primes(b))
 		{
 			printf("yes it can be broken into prime ex %d + %d = %d\n",a,b,n);
