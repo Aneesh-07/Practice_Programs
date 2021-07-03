@@ -11,6 +11,4 @@ int main()
     scanf("%f %f",&length,&breadth);
     area=R_area(length,breadth);
     printf("Area = %f",area);
-
-
 }
