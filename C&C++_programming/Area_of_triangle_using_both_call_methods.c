@@ -12,7 +12,7 @@ float C_area(float *b,float *h)
 int main()
 {
     int n;
-    float base,height,area;
+    float base,height,area; 
     printf("Enter 1 to calculate area of triangle by call by value and Enter 2 for call by refrence : ");
     scanf("%d",&n);
     printf("Enter base and height of the triangle : ");

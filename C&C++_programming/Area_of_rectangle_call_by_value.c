@@ -10,5 +10,5 @@ int main()
     printf("Enter length and breadth of rectangle :");
     scanf("%f %f",&length,&breadth);
     area=R_area(length,breadth);
-    printf("Area = %f",area);
+    printf("Area = %f",area); 
 }
