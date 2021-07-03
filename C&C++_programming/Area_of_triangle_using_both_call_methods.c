@@ -1,12 +1,12 @@
 #include<stdio.h>
 float V_area(float b,float h)
 {
-    float area=(1/2)*b*h;
+    float area=(0.5)*b*h;
     return area;
 }
 float C_area(float *b,float *h)
 {
-    float area =(1/2)* *b * *h;
+    float area =(0.5)* *b * *h;
     return area;
 }
 int main()
