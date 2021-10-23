@@ -1,27 +1,97 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
+class house
+{
+    public:
+    string hna,city,state;
+    int hno,no_of_house;
+        int l[10],b[10],h[10];
+    void input();
+    void display();
+};
+void house :: input()
+{
+    cin>>hna;
+    cin>>hno>>city>>state;
+    cin>>no_of_house;
+
+    for(int i=1;i<=no_of_house;i++)
+    cin>>l[i]>>b[i]>>h[i];
+}
+void house :: display()
+{
+    int n=1;
+    cout<<"House name="<<hna<<"\nHouse No="<<hno<<"\nCity="<<city<<"\nState="<<state<<endl;
+    while(n<=no_of_house)
+    {
+        cout<<"Details of Room "<<n<<"\nLength="<<l[n]<<"\nBreadth="<<b[n]<<"\nHeight="<<h[n]<<endl;
+        
+       n++; 
+    }++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
 int main()
 {
-    int n,x,c=0;
-    scanf("%d %d",&n,&x);
-    int a[n];
-    for(int i=0;i<n;i++)
-      {scanf("%d",&a[i]);
-      }
-      sort(a,a+n);
-    for(int i=0;i<n;i++)
-    {
-        int sum=0;
-        for(int j=i;j<n;j++)
-        {
-            sum+=a[j];
-            if(sum==x)
-            {
-                c++;
-                break;
-            }
-        
-        }
-    }
-    printf("%d",c);
+    house n1;
+    n1.input();
+    n1.display();
+
+	return 0;
 }
