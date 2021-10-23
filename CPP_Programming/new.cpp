@@ -1,4 +1,8 @@
+<<<<<<< new1
+#include<iosttream>
+=======
 #include <iostream>
+>>>>>>> main
 using namespace std;
 class house
 {
@@ -27,65 +31,8 @@ void house :: display()
         cout<<"Details of Room "<<n<<"\nLength="<<l[n]<<"\nBreadth="<<b[n]<<"\nHeight="<<h[n]<<endl;
         
        n++; 
-    }++++++
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    }
+  
 }
 int main()
 {
