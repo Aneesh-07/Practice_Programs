@@ -2,6 +2,7 @@
 # This is a comment 
 
 print("Hello world!")
+print("hi")
 
 x = 1
 if x > 0:

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"HELLOWORLD.C": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}
