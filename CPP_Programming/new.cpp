@@ -1,8 +1,6 @@
-<<<<<<< new1
-#include<iosttream>
-=======
-#include <iostream>
->>>>>>> main
+
+#include<iostream>
+
 using namespace std;
 class house
 {

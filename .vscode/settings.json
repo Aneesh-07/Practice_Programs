@@ -7,5 +7,6 @@
     "HELLOWORLD.C": "cpp",
     "iostream": "cpp"
   },
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "cmake.configureOnOpen": true
 }
