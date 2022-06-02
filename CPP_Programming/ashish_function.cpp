@@ -1,65 +1,40 @@
+// { Driver Code Starts
+// Initial Template for C
 
-struct ListNode
-{
-    int val;
-    struct ListNode *next;
+#include <stdio.h>
+
+struct pair {
+    long long int min;
+    long long int max;
 };
 
-#include <bits/stdc++.h>
-struct ListNode *addTwoNumbers(struct ListNode *list1, struct ListNode *list2)
-{
-    struct ListNode *h1 = (struct ListNode *)malloc(sizeof(struct ListNode)), *p, *l1, *l2, *x;
-    p = h1;
-    l1 = list1;
-    l2 = list2;
-    p->val = l1->val + l2->val;
-    l1 = l1->next;
-    l2 = l2->next;
-    p->next = NULL;
-    while (l1 != NULL && l2 != NULL)
-    {
-        struct ListNode *temp = (struct ListNode *)malloc(sizeof(struct ListNode));
-        temp->val = l1->val + l2->val;
-        l1 = l1->next;
-        l2 = l2->next;
-        temp->next = NULL;
-        p->next = temp;
-        p=p->next;
-    }
-    if (l1 == NULL)
-        x = l2;
-    else
-        x = l1;
+struct pair getMinMax(long long int arr[], long long int n) ;
 
-    while (x != NULL)
-    {
-        struct ListNode *temp = (struct ListNode *)malloc(sizeof(struct ListNode));
-        temp->val = x->val;
-        x = x->next;
-        temp->next = NULL;
-        p->next = temp;
-        p=p->next;
-    }
+int main() {
+    long long int t, n, a[100002], i;
+    struct pair minmax;
 
-    x = h1;
-    while (x->next != NULL)
-    {
-        if ((x->val) / 10 != 0)
-        {
-            (x->val) = (x->val) % 10;
-            ((x->next)->val)++;
-        }
-        x = x->next;
-    }
+    scanf("%lld", &t);
+    while (t--) {
+        scanf("%lld", &n);
 
-    if ((x->val) / 10 != 0)
-    {
-        struct ListNode *temp = (struct ListNode *)malloc(sizeof(struct ListNode));
-        temp->val = 1;
-        (x->val) = (x->val) % 10;
-        x->next=temp;
-        temp->next=NULL;
+        for (i = 0; i < n; i++) scanf("%lld", &a[i]);
+        minmax = getMinMax(a, n);
+        printf("%lld %lld\n", minmax.min, minmax.max);
     }
+    return 0;
+}// } Driver Code Ends
 
-    return h1;
+
+// User function Template for C
+
+struct pair getMinMax(long long int arr[], long long int n) {
+    struct pair s;
+    int mid = n/2;
+    int min,max;
+    if (mid == 0 ){
+        
+    }
+    
+    
 }
