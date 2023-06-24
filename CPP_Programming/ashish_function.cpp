@@ -27,14 +27,3 @@ int main() {
 
 
 // User function Template for C
-
-struct pair getMinMax(long long int arr[], long long int n) {
-    struct pair s;
-    int mid = n/2;
-    int min,max;
-    if (mid == 0 ){
-        
-    }
-    
-    
-}
